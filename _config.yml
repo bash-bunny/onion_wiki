@@ -1,0 +1,10 @@
+theme: jekyll-theme-midnight
+title: "Onion Wiki"
+description: "Deep Web Knowledge Base"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false

@@ -1,0 +1,218 @@
+@import "{{ site.theme }}";
+
+/* Cyberpunk Dark Theme */
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --neon-green: #00ff41;
+  --neon-cyan: #00ffff;
+  --neon-magenta: #ff00ff;
+  --neon-red: #ff0040;
+  --text-primary: #00ff41;
+  --text-secondary: #33ff77;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Courier New', 'Monaco', 'Inconsolata', monospace;
+  line-height: 1.6;
+  padding: 20px;
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+/* Scanline effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--neon-cyan);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px 0 15px 0;
+  text-shadow: 0 0 10px var(--neon-cyan),
+               0 0 20px var(--neon-cyan),
+               0 0 30px var(--neon-cyan);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: 2px solid var(--neon-magenta);
+  padding-bottom: 10px;
+  animation: flicker 3s infinite;
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+h3 {
+  font-size: 1.5em;
+  color: var(--neon-red);
+  text-shadow: 0 0 8px var(--neon-red);
+}
+
+/* Links */
+a {
+  color: var(--neon-magenta);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--neon-magenta);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--neon-cyan);
+  border-bottom-color: var(--neon-cyan);
+  text-shadow: 0 0 10px var(--neon-cyan);
+}
+
+/* Tables - Cyberpunk Style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: var(--bg-secondary);
+  border: 2px solid var(--neon-green);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+thead {
+  background: linear-gradient(180deg, #001a00 0%, #003300 100%);
+}
+
+th {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid var(--neon-green);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+td {
+  padding: 12px 15px;
+  border: 1px solid #00ff4144;
+  color: var(--text-secondary);
+}
+
+tbody tr {
+  transition: all 0.3s ease;
+}
+
+tbody tr:nth-child(odd) {
+  background: rgba(0, 255, 65, 0.05);
+}
+
+tbody tr:hover {
+  background: rgba(0, 255, 65, 0.15);
+  box-shadow: inset 0 0 10px rgba(0, 255, 65, 0.3);
+  transform: scale(1.01);
+}
+
+/* Code blocks */
+code {
+  background: #001a00;
+  color: var(--neon-green);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  border: 1px solid var(--neon-green);
+}
+
+pre {
+  background: #001100;
+  border: 2px solid var(--neon-green);
+  border-radius: 5px;
+  padding: 15px;
+  overflow-x: auto;
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Flicker animation for headers */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  41%, 43% { opacity: 0.8; }
+  45%, 47% { opacity: 0.9; }
+  49% { opacity: 0.85; }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Neon border effect */
+.neon-box {
+  border: 2px solid var(--neon-cyan);
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px var(--neon-cyan),
+              inset 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+/* ASCII art/terminal prompt style */
+p::before {
+  content: "▸ ";
+  color: var(--neon-cyan);
+}
+
+/* Lists */
+ul, ol {
+  margin: 15px 0 15px 30px;
+}
+
+li {
+  margin: 8px 0;
+  color: var(--text-secondary);
+}
+
+li::marker {
+  color: var(--neon-magenta);
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    var(--neon-magenta), 
+    transparent);
+  margin: 30px 0;
+  box-shadow: 0 0 10px var(--neon-magenta);
+}
