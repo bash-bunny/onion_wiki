@@ -28,7 +28,7 @@ title: "Onion Wiki // Deep Web Archive"
 |King Wiki|http://kingbbvooef4lra2kpc7embu3usgwws3zde4yh64rbfarely5pfkkjad.onion|
 |HD Wiki|http://pve2xxizrbumr3px4ln6los5t6sjtupx5wcejhmcmnh3v47xb7sy2jid.onion|
 |The Hidden Wiki -|http://torlink2uegl22vwzop42t4eipy2r2eksk67kvan4vx4r6h77t3cejad.onion|
-|The Hidden Wiki Official 2021 | Verified Deep Web links | All deep web urls|http://torlinkclyassxoc7ddpyb3jeg2nrwgmkhdqo6uggpb5k3cpcsr6lpqd.onion|
+|The Hidden Wiki Official 2021 - Verified Deep Web links - All deep web urls|http://torlinkclyassxoc7ddpyb3jeg2nrwgmkhdqo6uggpb5k3cpcsr6lpqd.onion|
 |TorLinks .onion Link List The Hidden Wiki Deep Web Onion Urls Onionland Tor linklist|http://torlinksge6enmcyyuxjpjkoouw4oorgdgeo7ftnq3zodj7g2zxi3kyd.onion|
 |The Hidden Wiki : Your Gateway to the Dark Web - Wiki|http://torlisthsxo7h65pd2po7kevpzkk4wwf3czylz3izcmsx4jzwabbopyd.onion|
 |TorLinks | .onion Link List The Hidden Wiki Deep Web Onion Urls Onionland Tor linklist|http://torlk4ub2vpax2iinhtvsm2ipfcwcswh5dhbt2xsx4idhdcbu2syp3yd.onion|
